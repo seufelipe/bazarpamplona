@@ -9,14 +9,14 @@
 ## Contato para shows
 
 - Rafael Capanema
--- (11) 99912-5952 
--- [bazarpamplona@gmail.com](mailto:bazarpamplona@gmail.com)
+- (11) 99912-5952 
+- [bazarpamplona@gmail.com](mailto:bazarpamplona@gmail.com)
 
 ## Assessoria de imprensa
 
 - Patrícia Dornelas 
--- (11) 99365-0944
--- [patriciadornelas.news@gmail.com](mailto:patriciadornelas.news@gmail.com)
+- (11) 99365-0944
+- [patriciadornelas.news@gmail.com](mailto:patriciadornelas.news@gmail.com)
 
 ---
 
