@@ -1,0 +1,135 @@
+.sc-player {
+	background-color: #eee;
+	color: #333;
+	margin: 0 auto;
+}
+
+.sc-player a {
+	text-decoration: none;
+	color: #333;
+}
+
+/* Artworks */
+
+.sc-player .sc-artwork-list {
+	background: #eee;
+}
+
+/* scrubber */
+
+.sc-scrubber {
+	background-color: #e5e5e5;
+}
+
+.sc-scrubber .sc-time-span {
+	background-color: #fff;
+}
+
+.sc-scrubber .sc-time-span img {
+	height: 6px;
+	width: 100%;
+	background-color: yellow;
+}
+
+.sc-scrubber .sc-buffer {
+	background-color: #fff;
+	opacity: 0.4;
+}
+
+.sc-scrubber .sc-waveform-container {
+	display: none;
+}
+
+.sc-scrubber .sc-played {
+	background-color: #ffde00;
+}
+
+/* controls */
+
+.sc-player .sc-controls a {
+	color: transparent;
+	background: url('img/play.png');
+}
+
+.sc-player .sc-controls a:hover {
+	background: url('img/play-hover.png');
+}
+
+.sc-player .sc-controls a.sc-pause {
+	background: url('img/play.png');
+}
+
+.sc-player .sc-controls a.sc-pause:hover {
+	background: url('img/play-hover.png');
+}
+
+.sc-player.playing .sc-controls a.sc-pause {
+	background: url('img/pause.png');
+}
+
+.sc-player.playing .sc-controls a.sc-pause:hover {
+	background: url('img/pause-hover.png');
+}
+
+/* Track listings*/
+
+.sc-player ol.sc-trackslist {
+	color: #999;
+}
+
+.sc-player ol.sc-trackslist li.active,
+.sc-player ol.sc-trackslist li:hover {
+	background-color: #fff;
+	color: #666;
+}
+
+.sc-player ol.sc-trackslist li a {
+	color: #999;
+}
+
+.sc-player ol.sc-trackslist li:hover a {
+	color: #666;
+}
+
+.sc-player ol.sc-trackslist li.active a {
+	color: #da5559;
+}
+
+.sc-track-duration {
+	text-align: right;
+	float: right;
+	padding: 0 5px;
+	margin-left: 5px;
+}
+
+/* Track info*/
+
+.sc-player .sc-info {
+	background: #fff;
+	background: rgba(255,255,255,.8);
+}
+
+.sc-player .sc-info-toggle {
+	background: #fff;
+	color: #da5559;;
+	padding: 0 5px;
+}
+
+.sc-player .sc-info-toggle:hover {
+	background: #fedb01;
+}
+
+.sc-player .sc-info-close {
+	background: #da5559;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+.sc-info h3 {
+	margin: 0;
+	text-align: center;
+}
+
+.sc-info h4 {
+	display: none;
+}

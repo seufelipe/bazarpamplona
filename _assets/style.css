@@ -1,0 +1,369 @@
+@import url("structure.css");
+@import url("colors.css");
+
+@font-face {
+  font-family: 'bzrpmpln';
+  src: url("fonts/bzrpmpln.eot");
+  src: url("fonts/bzrpmpln.eot?#iefix") format('embedded-opentype'), url("fonts/bzrpmpln.woff") format('woff'), url("fonts/bzrpmpln.ttf") format('truetype'), url("fonts/bzrpmpln.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: bzrpmpln;
+  content: attr(data-icon);
+  speak: none;
+}
+
+footer,
+header,
+section {
+    display: block;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+::-moz-selection {
+	background: #ffcb05;
+	color: #000;
+	text-shadow: none;
+}
+
+::selection {
+	background: #ffcb05;
+	color: #000;
+	text-shadow: none;
+}
+
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(-0.5deg);
+    }
+
+  50% {
+    -webkit-transform: rotate(0.5deg);
+     }
+
+  100% {
+    -webkit-transform: rotate(-0.5deg);
+     } }
+     
+     
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+
+
+.cf:before,
+.cf:after { content:""; display: table }
+.cf:after { clear: both }
+.cf { zoom: 1 }
+
+
+/* BASE
+---------------------------------------------------------------------------- */
+
+html { 
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+	background: #da5559 url(discos.png) right top no-repeat;
+    margin: 0 auto;
+    font: 100%/1.5 'hooligan',sans-serif;
+    color: #48436a;
+    _width: 567px;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #4c9e9d;
+}
+a:visited {
+	border-bottom: 1px dotted #4c9e9d;
+	color: #4c9e9d;
+}
+a:hover,
+a:focus {
+	color: #48436a;
+	-o-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+}
+a:active {}
+
+/* ESTRUTURA
+---------------------------------------------------------------------------- */
+
+#wrap {
+	margin: 0 auto;
+	width: 567px;
+}
+
+#site-title {
+	background: url(fabulous.png) left top no-repeat;
+	float: left;
+	height: 240px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	text-indent: -9999px;
+	width: 567px;
+}
+
+#album {
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
+	box-shadow: 0 0 6px rgba(0,0,0,.3);
+	float: left;
+	margin: 20px 40px 0 0;
+	position: relative;
+	width: 320px;
+}
+
+#altern {
+	background: #fff;
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
+	box-shadow: 0 0 6px rgba(0,0,0,.3);
+	list-style: none;
+	padding: 8px;
+	position: absolute;
+	text-align: center;
+	top: 28px;
+	left: -32px;
+}
+
+#altern li {
+	height: 24px;
+	line-height: 24px;
+	width: 24px;
+}
+
+#altern li a {
+	color: #ffde00;
+	display: block;
+	position: relative;
+}
+
+#altern li.chords a {
+	color: #4686e0;
+}
+
+#altern li.soundcloud a {
+	color: #ed5e05;
+}
+
+#altern li.grooveshark a {
+	color: #ff7f00;
+}
+
+#altern li.rdio a {
+	color: #7673a4;
+}
+
+#altern li.mediafire a {
+	color: #b3d9fe;
+}
+
+#altern li.torrent a {
+	color: #976946;
+}
+
+#altern li.direct a {
+	color: #ee3085;
+	font-size: 120%;
+}
+
+#altern li a:hover {
+	color: #ffde00;
+}
+
+#altern a:active {
+	top: 1px;
+}
+
+#info {
+	color: #48436a;
+	display: inline;
+	margin: 40px 0 40px 0;
+	float: left;
+	width: 200px;
+}
+
+#contact {
+	background: #e8e9a6;
+	color: #4c9e9d;
+	margin-top: 20px;
+	padding: 20px;
+	position: relative;
+}
+
+#contact:before {
+   content:"";
+   position:absolute;
+   top:0;
+   right:0;
+   border-width:0 16px 16px 0;
+   border-style:solid;
+   border-color:#da5559 #da5559 #c3c531 #c3c531;
+   background:#c3c531;
+   display:block; width:0; /* Firefox 3.0 damage limitation */
+}
+
+.vcard {
+	font-style: normal;
+	margin-bottom: 10px;
+}
+
+.vcard h3 {
+	color: #48436a;
+	font-size: 16px;
+	margin: 0;
+} 
+
+.vcard a {
+	border-bottom: 1px dotted #4c9e9d;
+}
+
+.vcard a:hover {
+	border-bottom: 1px dotted #48436a;
+}
+
+#album-info {
+	font-size: .88em;
+	margin-top: 20px;
+}
+
+#old {
+	background: #fff;
+	background: rgba(255,255,255,.6);
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	zoom: 1;
+	*display: inline;
+}
+
+#old:hover {
+	background: #fff;
+}
+
+footer {
+	background: url(predios.png) center top repeat-x;
+	height: 167px;
+	position: relative;
+	width: 100%;
+}
+
+#robot {
+	background: url(robot.png) no-repeat;
+	height: 357px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 412px;
+}
+
+#clip {
+	background: url( 'vermaking.png' ) no-repeat;
+	display: block;
+	height: 96px;
+	overflow: hidden;
+	position: absolute;
+	top: 140px;
+	left: 190px;
+	text-indent: -9999px;
+	width: 134px;
+}
+
+#clip:hover {
+	-webkit-animation: wiggle 0.1s infinite;
+}
+
+#extra {
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	width: 206px;
+}
+
+#share div {
+	display: inline;
+	float: left;
+}
+
+#tw {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+#player {
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,.5);
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 166px;
+	width: 100%;
+}
+
+.screen-reader-text {
+	position: absolute !important;
+	height: 1px; width: 1px; 
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
